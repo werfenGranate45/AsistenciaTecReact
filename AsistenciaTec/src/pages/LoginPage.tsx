@@ -35,8 +35,8 @@ function LoginPage() {
   //JSX 
   return (
     <>
-      <div className='bg-green-400 w-full h-screen flex justify-center items-center'>
-        <section className='bg-white p-2'>
+      <div className='bg-cover bg-no-repeat overflow-hidden w-full h-screen flex justify-center items-center bg-[url(https://wallpapercave.com/wp/wp12329545.png)]'>
+        <section className='bg-white p-2 w-96'>
 
           <h1 className='mb-1'>Login</h1>
           <form 
@@ -61,7 +61,7 @@ function LoginPage() {
                 Send
             </button>
           </form>
-
+          
         </section>
       </div>
     </>

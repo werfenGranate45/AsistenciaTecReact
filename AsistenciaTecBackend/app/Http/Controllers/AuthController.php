@@ -16,7 +16,10 @@ class AuthController extends Controller
             $user = Auth::user();
             $token = $user->createToken("token")->plainTextToken;
 
-            return response()->json(["token" => $token], 200);
+            return response()->json(["token" => [
+                "token" => $token,
+                "role" => $user->role
+            ]], 200);
         }else{
             return response()->json(["unsuccess" => "login incorrecto"], 403);
         }
